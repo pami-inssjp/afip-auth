@@ -1,0 +1,31 @@
+{
+  "name": "afip-auth",
+  "description": "afip-auth expone la funcionalidad básica para poder utilizar la autenticación con clave fiscal que provee AFIP",
+  "keywords": ["AFIP","clave fiscal","INSSJP","PAMI"],
+  "homepage":"https://github.com/pami-inssjp/afip-auth",
+  "version": "0.0.1",
+  "author": "Pablo González <pablodgonzalez@gmail.com> (https://github.com/pablodgonzalez)",
+  "contributors":[
+    "Cristian Ríos <cristian.frba@gmail.com> (https://github.com/gitdecristian)"
+  ],
+  "main": "index.js",
+  "directories":{
+    "lib":"./lib"
+  },
+  "scripts": {
+    "test": "for f in tests/*Test.js; do node \"$f\"; if [ $? -eq 0 ]; then echo ¡\"$f\" SUCCESS!; else echo ¡\"$f\" FAILED!; fi done; exit 0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/pami-inssjp/afip-auth.git"
+  },
+  "dependencies": {
+    "xmldom": "^0.1.19"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/pami-inssjp/afip-auth/master/LICENSE"
+    }
+  ]
+}
